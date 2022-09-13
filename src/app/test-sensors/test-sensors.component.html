@@ -1,0 +1,235 @@
+<!-- <p>test-sensors works!</p> -->
+
+<!-- <h1 class="header">Test Item</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+            <form [formGroup]="testSensorForm">
+                <div class="form-group" id="inp">
+                    <select class="custom-select" (change)="changeItem($event)" formControlName="foodItem">
+                        <option value="">Choose your food item</option>
+                        <option *ngFor="let food of foods" [ngValue]="food">{{food}}</option>
+                    </select>
+                </div>
+                <span>
+                    <button type="button" class="btn btn-success" (click) = sensorVal(1)>Sensor 1</button>
+                </span>
+                <span>
+                    <button type="button" class="btn btn-danger" (click) = sensorVal(2)>Sensor 2</button>
+                </span>
+                <span>
+                    <button type="button" class="btn btn-warning" (click) = sensorVal(3)>Sensor 3</button>
+                </span>
+                <span>
+                    <button type="button" class="btn btn-info" (click) = sensorVal(4)>Sensor 4</button>
+                </span>
+            </form>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div *ngFor = "let item of itemP; index as i; last as lastItem" >
+    <span *ngIf = "lastItem" >{{item.value}}</span>
+</div> -->
+<!-- <div *ngFor = "let item of itemM; index as i; last as lastItem" >
+    <span *ngIf = "lastItem" >{{item.value}}</span>
+</div>  -->
+<!-- <div *ngFor = "let item of itemA; index as i; last as lastItem" >
+    <span *ngIf = "lastItem" >{{item.value}}</span>
+</div> -->
+<!-- <div *ngFor = "let item of itemT; index as i; last as lastItem" >
+    <span *ngIf = "lastItem" >{{item.value}}</span>
+</div> -->
+
+<!-- <div>
+    {{opt}}
+</div> -->
+
+<!-- <label>Enter food item</label> -->
+<!-- <input type="text" formControlName="foodItem" class="form-control"> -->
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="sidebar">
+                <header>
+                    <img src="../../assets/1x/Asset 3.png" alt="" srcset="" id="logo-img">
+                </header>
+                <ul>
+                    <!-- <li><a href="#">Inferences</a></li> -->
+                    <!-- <li><a href="#">pH</a></li>
+                    <li><a href="#">Moisture</a></li>
+                    <li><a href="#">Alcohol</a></li>
+                    <li><a href="#">Temperature</a></li> -->
+                    <li><a href="/home">Home</a></li>
+                    <li><a type="button" (click)="Logout()">Log out</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <form [formGroup]="testSensorForm">
+                <div class="form-group" id="inp">
+                    <select class="custom-select" (change)="changeItem($event)" formControlName="foodItem"  id="opt">
+                        <option value="">Choose your food item</option>
+                        <option *ngFor="let food of foods" [ngValue]="food">{{food}}</option>
+                    </select>
+                    <!-- <input type="text" placeholder="Enter the food item" formControlName="foodItem" class="form-control"> -->
+                </div>
+
+                <div class="container-fluid tabs">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        pH
+                                    </div>
+                                    <div *ngFor = "let item of itemP; index as i; last as lastItem" class="res-values">
+                                        <span *ngIf = "lastItem">{{item.value}}</span>
+                                    </div>
+                                    <div class="tab">
+                                        <img src="assets/brewing.png" class="img-tab">
+                                    </div>
+                                    <hr>
+                                  <button type="button" class="btn" (click) = sensorVal(1)>Update</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Moisture
+                                    </div>
+                                    <div *ngFor = "let item of itemM; index as i; last as lastItem" class="res-values">
+                                        <span *ngIf = "lastItem" >{{item.value}} %</span>
+                                    </div> 
+                                    <div>
+                                        <img src="assets/water.png" class="img-tab">
+                                    </div>
+                                    <hr>
+                                  <button type="button" class="btn" (click) = sensorVal(2)>Update</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Alcohol
+                                    </div>
+                                    <div *ngFor = "let item of itemA; index as i; last as lastItem" class="res-values">
+                                        <span *ngIf = "lastItem" >{{item.value}} g/dL</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/gas.png" class="img-tab">
+                                    </div>
+                                    <hr>
+                                  <button type="button" class="btn" (click) = sensorVal(3)>Update</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-3">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="card-title">
+                                        Temperature
+                                    </div>
+                                    <div *ngFor = "let item of itemT; index as i; last as lastItem" class="res-values">
+                                        <span *ngIf = "lastItem" >{{item.value}} &#8451;</span>
+                                    </div>
+                                    <div>
+                                        <img src="assets/thermometer.png" class="img-tab">
+                                    </div>
+                                    <hr>
+                                  <button type="button" class="btn" (click) = sensorVal(4)>Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div>
+                <div class="card results">
+                    <div class="card-body">
+                        <h3 id="res-title">Inferences</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="res-opn">
+                                    pH level is {{pres}}
+                                </div>
+                                <div class="res-opn">
+                                    Moisture level is {{mres}}
+                                </div>
+                                <div class="res-opn">
+                                    Alcohol level is {{ares}}
+                                </div>
+                                <div class="res-opn">
+                                    Temperature is {{tres}}
+                                </div>
+                                <hr>
+                                <button type="button" value="Result" (click)=results() class="btn">Result</button>
+                                <div id="main-res">
+                                    {{res}}
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="../assets/world-financial.png" id="res-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div *ngIf="chartall" class="line-charts">
+                    <canvas id="canvasAll">{{ chartall }}</canvas>
+                    <div class="text">
+                        <h5>Graphical Representation of Sensor values</h5>
+                    </div>
+                </div>
+
+                <section id="ph"> 
+                    <div *ngIf="chart" class="line-charts">
+                        <canvas id="canvasP">{{ chart }}</canvas>
+                        <div class="text">
+                            <h5>Graphical Representation of pH values</h5>
+                        </div>
+                    </div>
+                </section>
+                
+    
+                <div *ngIf="chartm" class="line-charts">
+                    <canvas id="canvasM">{{ chartm }}</canvas>
+                    <div class="text">
+                        <h5>Graphical Representation of Moisture values</h5>
+                    </div>
+                </div>
+    
+                <div *ngIf="charta" class="line-charts">
+                    <canvas id="canvasA">{{ charta }}</canvas>
+                    <div class="text">
+                        <h5>Graphical Representation of Alcohol values</h5>
+                    </div>
+                </div>
+    
+                <div *ngIf="chartt" class="line-charts">
+                    <canvas id="canvasT">{{ chartt }}</canvas>
+                    <div class="text">
+                        <h5>Graphical Representation of Temperature values</h5>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<!-- ,testSensorForm.value -->
+
+

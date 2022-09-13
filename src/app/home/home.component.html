@@ -1,0 +1,241 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav">
+    <div class="container">
+        <img src="../../assets/1x/Asset 3.png" alt="" id="logo-img">
+        <div id="sign-btn">
+            <a type="button" class="btns" href="/login">LOGIN</a>
+            <a type="button" class="btns" href="/signup">SIGN UP</a>
+            <a type="button" class="btns" (click)="Logout()">LOG OUT</a>
+        </div>
+        
+    </div>
+    <!-- <div id="sign-btn">
+        <button type="button" class="btns" >Login</button>
+        <button type="button" class="btns">Sign Up</button>
+    </div> -->
+</nav>
+
+<div class="container gtco-banner-area">
+    <div class="row">
+        <div class="col-md-6">
+            <p *ngIf="users" id="user">Welcome {{users.displayName}},</p>
+            <h1> FoodCare </h1>
+            <h2>Smart Systems</h2>
+            <p>Enjoy the taste of Eating right</p>
+            <a href="/test-sensors">Test <i class="fa fa-angle-right" aria-hidden="true"></i></a></div>
+        <div class="col-md-6">
+            <div class="card"><img class="card-img-top img-fluid" src="../../assets/1x/Asset 5.png" alt=""></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid gtco-feature" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="cover">
+                    <div class="card">
+                        <svg
+                                class="back-bg"
+                                width="100%" viewBox="0 0 900 700" style="position:absolute; z-index: -1">
+                            <defs>
+                                <linearGradient id="PSgrad_01" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                                    <stop offset="0%" stop-color="rgb(0, 255, 0)" stop-opacity="1"/>
+                                    <stop offset="100%" stop-color="rgb(128, 255, 128)" stop-opacity="1"/>
+                                </linearGradient>
+                            </defs>
+                            <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_01)"
+                                  d="M616.656,2.494 L89.351,98.948 C19.867,111.658 -16.508,176.639 7.408,240.130 L122.755,546.348 C141.761,596.806 203.597,623.407 259.843,609.597 L697.535,502.126 C748.221,489.680 783.967,441.432 777.751,392.742 L739.837,95.775 C732.096,35.145 677.715,-8.675 616.656,2.494 Z"/>
+                        </svg>
+                        <!-- *************-->
+
+                        <!-- <svg width="100%" viewBox="0 0 700 500"> -->
+                            <!-- <clipPath id="clip-path">
+                                <path d="M89.479,0.180 L512.635,25.932 C568.395,29.326 603.115,76.927 590.357,129.078 L528.827,380.603 C518.688,422.048 472.661,448.814 427.190,443.300 L73.350,400.391 C32.374,395.422 -0.267,360.907 -0.002,322.064 L1.609,85.154 C1.938,36.786 40.481,-2.801 89.479,0.180 Z"></path>
+                            </clipPath>  -->
+                            <!-- xlink:href for modern browsers, src for IE8- -->
+                         <!-- <image clip-path="url(#clip-path)" xlink:href="../../" width="100%"
+                                   height="465" class="svg__image"></image> 
+                         -->
+                        <!-- </svg> -->
+                        <!-- <img src="../../assets/1x/Asset 1.png" alt=""> -->
+                        <div class="col">
+                            <div class="row">
+                                <img src="../../assets/sec-img.jpg" alt="" id="sec-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5">
+                <h2> Who we are ? </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In rhoncus turpis nisl, vitae dictum mi
+                    semper convallis. Ut sapien leo, varius ac dapibus a, cursus quis ante. </p>
+                <p>
+                    <small>Nunc sodales lobortis arcu, sit amet venenatis erat placerat a. Donec lacinia magna nulla,
+                        cursus impediet augue egestas id. Suspendisse dolor lectus, pellentesque quis tincidunt ac,
+                        dictum id neque.
+                    </small>
+                </p>
+                <!-- <a href="#">Learn More <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid gtco-features" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2> Explore The Services<br/>
+                    We Offer For You </h2>
+                <p> Nunc sodales lobortis arcu, sit amet venenatis erat placerat a. Donec lacinia magna nulla, cursus
+                    impediet augue egestas id. Suspendisse dolor lectus, pellentesque quis tincidunt ac, dictum id
+                    neque. </p>
+                <!-- <a href="#">All Services <i class="fa fa-angle-right" aria-hidden="true"></i></a> -->
+            </div>
+            <div class="col-lg-8">
+                <svg id="bg-services"
+                     width="100%"
+                     viewBox="0 0 1000 800">
+                    <defs>
+                        <linearGradient id="PSgrad_02" x1="64.279%" x2="0%" y1="76.604%" y2="0%">
+                            <stop offset="0%" stop-color="rgb(0, 255, 0)" stop-opacity="1"/>
+                            <stop offset="100%" stop-color="rgb(128, 255, 128)" stop-opacity="1"/>
+                        </linearGradient>
+                    </defs>
+                    <path fill-rule="evenodd" opacity="0.102" fill="url(#PSgrad_02)"
+                          d="M801.878,3.146 L116.381,128.537 C26.052,145.060 -21.235,229.535 9.856,312.073 L159.806,710.157 C184.515,775.753 264.901,810.334 338.020,792.380 L907.021,652.668 C972.912,636.489 1019.383,573.766 1011.301,510.470 L962.013,124.412 C951.950,45.594 881.254,-11.373 801.878,3.146 Z"/>
+                </svg>
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="../../assets/ph.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">pH</h3>
+                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
+                                    eget.</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="../../assets/home_water.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Moisture</h3>
+                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
+                                    eget.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="../../assets/1x/Asset 6.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Alcohol</h3>
+                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
+                                    eget.</p>
+                            </div>
+                        </div>
+                        <div class="card text-center">
+                            <div class="oval"><img class="card-img-top" src="../../assets/celsius.png" alt=""></div>
+                            <div class="card-body">
+                                <h3 class="card-title">Temperature</h3>
+                                <p class="card-text">Nullam quis libero in lorem accumsan sodales. Nam vel nisi
+                                    eget.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid gtco-features-list">
+    <div class="container">
+        <div class="row">
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="../../assets/good.png" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Quality Results</h5>
+                    Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
+                    fermentum ac eu eros. Aliquam erat volutpat.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="../../assets/analysis.png" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Analytics</h5>
+                    Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
+                    fermentum ac eu eros. Aliquam erat volutpat.
+                </div>
+            </div>
+            <div class="media col-md-6 col-lg-4">
+                <div class="oval mr-4"><img class="align-self-start" src="../../assets/click.png" alt=""></div>
+                <div class="media-body">
+                    <h5 class="mb-0">Easy to Use</h5>
+                    Aliquam a nisl pulvinar, hendrerit arcu sed, dapibus velit. Duis ac quam id sapien vestibulum
+                    fermentum ac eu eros. Aliquam erat volutpat.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="page-footer font-small cyan darken-3">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Grid row-->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-12 py-5">
+          <div class="mb-5 flex-center">
+  
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fab fa-pinterest fa-lg white-text fa-2x"> </i>
+            </a>
+          </div>
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row-->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="/home"> foodcare.com</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
+
+
+

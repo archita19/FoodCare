@@ -1,0 +1,33 @@
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.btn {
+    border: 1px solid black;
+    /* margin-left: 150px; */
+    margin-bottom: 15px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.container {
+    margin-top: 140px;
+    border-radius: 30px;
+    box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container .row {
+    margin-left: 20px;
+}
+
+#link {
+    margin-top: 20px;
+}
+
+#login-img {
+    width: 580px;
+    height: 400px;
+    margin-left: 10px;
+}
