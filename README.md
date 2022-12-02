@@ -1,27 +1,43 @@
-# FoodCare
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+# FoodCare Smart System - Fruit Freshness Detection System
 
-## Development server
+This is a web application that aims to detect the freshness of the fruits given the four parameters **temperature, pH, ethanol, moisture**.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+The readings for each of the parameters are taken using an IoT setup. Sensors meant for each parameters take the readings and then send it to the database. From here the data is fetched and displayed on the web.
+Visualizations are added for better user comprehension.
+## Installation
 
-## Code scaffolding
+```bash
+ng serve
+```
+Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+    
+## Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**Frontend:** Angular (8.3.4), ChartJS, Bootstrap
 
-## Build
+**Database & Authentication:** Firebase
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+**Hardware:** Arduino Uno R3, WeMos D1 R1, Sensors *(Moisture, pH, MQ3, DS18B20)*
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Screenshots
 
-## Running end-to-end tests
+**Hardware Setup**
+![IoT circuit](https://user-images.githubusercontent.com/47472699/205355657-c87b513b-f85f-4ad7-b637-0a74d0055d61.jpg)
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+**Web Application**
 
-## Further help
+*Home Page*
+![Home page](https://user-images.githubusercontent.com/47472699/205356298-64679760-6ee6-4028-8da0-d7764ccb2e90.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+*Dashboard*
+![Dashboard](https://user-images.githubusercontent.com/47472699/205356634-63501d54-bcaf-4240-b3a3-a4763c338501.png)
+
+![Visualization](https://user-images.githubusercontent.com/47472699/205356816-bab7caee-9fef-4473-ab9e-d74d1a828daf.png)
+## Acknowledgements
+
+ - [Angular](https://angular.io/docs)
+ - [Firebase](https://firebase.google.com/docs/database/)
+ - [IoT prototyping with Firebase](https://www.freecodecamp.org/news/iot-prototyping-with-firebase-doing-more-with-less-2f5c746dac8b/)
+
